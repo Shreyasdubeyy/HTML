@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<!-- font -->
+<script src="https://kit.fontawesome.com/bddd41df09.js" crossorigin="anonymous"></script>
+
+<!-- css -->
+<link rel="stylesheet" href="pro.css">
+
+
+</head>
+<body>
+  
+ <!-- navbar -->
+
+ <header>
+  <input type="checkbox" name="" id="chk1">
+
+  <!-- for side menu -->
+ <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"> </i>
+  <i class="fa-solid fa-times" id="close-btn" onclick="closemenu()"></i>
+ 
+  <div class="logo"><h1>SITE LOGO</h1></div>
+  <div class="search-box">
+    
+    <form action="">
+      <input type="text" name="search" id="srch" placeholder="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <ul>
+    <li><a href="#">Log In <i class="fa-solid fa-right-to-bracket"></i> </a></li>
+    <li><a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+    <li><a href="#">Wishlist <i class="fa-sharp fa-solid fa-heart"></i></a></li>
+    <li><a href="#">Settings <i class="fa-solid fa-gear"></i></a></li>
+    <li>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </li>
+  </ul>
+
+  <div class="menu">
+    <label for="chk1">
+      <i class="fa-solid fa-angles-left"></i>
+    </label>
+  </div>
+</header>
+
+  
+  <section class="new-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="product-slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="pro12.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="pro13.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="pro14.jpg" class="d-block w-100">
+                      </div>
+                     
+                      <!-- control -->
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#product-slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#product-slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                   </div>
+            </div>
+
+            <!-- new column -->
+            <div class="col-md-7">
+                <p class="new-arrival text-center">NEW</p>
+                <h2>H&M Red sweatshirt</h2>
+                <p>#372IFC</p>
+
+                <!-- stars -->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                      
+                <!-- additonal info -->
+                <p class="price">USD $99</p>
+
+                <div class="stock">
+                  <b>Availibility: </b>
+                  <button type="button" class="btn btn-success">In Stock</button>
+                </div>
+<br>
+                <p><b>Condition:</b>Latest</p>
+                <p><b>Brand:</b>H&M</p>
+                <div class="box">
+                  <form action="/action_page.php">
+                    <label for="sizes"><b>Size:</b></label>
+                    <select name="sizes" id="sizes">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                </div>
+                <br>
+                <label>Quantity:</label>
+                <input type="text" value="2">
+
+                <!-- button -->
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- description -->
+<section class="product-description">
+    <div class="conatiner">
+        <h4>Product Description</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam obcaecati exercitationem
+             eveniet provident iure eligendi omnis aut fugit debitis. Sint eveniet id quae ipsa asperiores del
+            eniti, tempore ipsum praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam obcaecati exercitationem
+             eveniet provident iure eligendi omnis aut fugit debitis. Sint eveniet id quae ipsa asperiores del
+            eniti, tempore ipsum praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.         
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam obcaecati exercitationem
+             eveniet provident iure eligendi omnis aut fugit debitis. Sint eveniet id quae ipsa asperiores del
+            eniti, tempore ipsum praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.                
+        </p>
+
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="title">
+          <h2>Similar Products</h2>
+        </div>
+      <div class="row">
+      
+        <!-- first product -->
+      
+        <div class="col-md-3">
+          <div class="product-top">
+           <img src="pro.jpg">
+           <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quick Buy">
+               <i class="fa fa-eye"></i>
+               </button>
+      
+               <button type="button" class="btn btn-secondary" title="Add to favourites">
+               <i class="fa fa-heart"></i>
+               </button>
+      
+               <button type="button" class="btn btn-secondary" title="Add to Cart">
+                <i class="fa fa-shopping-cart"></i>
+               </button>
+            </div>
+           </div>   
+      
+           <!-- stars -->
+               <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>Iphone 14 pro</h3>
+                <h5>$999</h5>
+              </div>
+           </div>
+      
+          <!-- second product -->
+          <div class="col-md-3">
+            <div class="product-top">
+             <img src="pro1.jpg">
+             <div class="overlay-right">
+                <button type="button" class="btn btn-secondary" title="Quick Buy">
+                 <i class="fa fa-eye"></i>
+                 </button>
+        
+                 <button type="button" class="btn btn-secondary" title="Add to favourites">
+                 <i class="fa fa-heart"></i>
+                 </button>
+        
+                 <button type="button" class="btn btn-secondary" title="Add to Cart">
+                  <i class="fa fa-shopping-cart"></i>
+                 </button>
+              </div>
+             </div>   
+                 <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <h3>Samsung watch</h3>
+                  <h5>$499</h5>
+                </div>
+             </div>
+          <!-- product three -->
+             <div class="col-md-3">
+              <div class="product-top">
+               <img src="pro2.jpg">
+               <div class="overlay-right">
+                  <button type="button" class="btn btn-secondary" title="Quick Buy">
+                   <i class="fa fa-eye"></i>
+                   </button>
+          
+                   <button type="button" class="btn btn-secondary" title="Add to favourites">
+                   <i class="fa fa-heart"></i>
+                   </button>
+          
+                   <button type="button" class="btn btn-secondary" title="Add to Cart">
+                    <i class="fa fa-shopping-cart"></i>
+                   </button>
+                </div>
+               </div>   
+                   <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h3>Acer Predator Helios 300</h3>
+                    <h5>$745</h5>
+                  </div>
+               </div>
+            
+           
+               <!-- product four -->
+               <div class="col-md-3">
+                <div class="product-top">
+                 <img src="pro3.jpg" >
+                 <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick Buy">
+                     <i class="fa fa-eye"></i>
+                     </button>
+            
+                     <button type="button" class="btn btn-secondary" title="Add to favourites">
+                     <i class="fa fa-heart"></i>
+                     </button>
+            
+                     <button type="button" class="btn btn-secondary" title="Add to Cart">
+                      <i class="fa fa-shopping-cart"></i>
+                     </button>
+                  </div>
+                 </div>   
+                     <div class="product-bottom text-center">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <h3>JBL Quantum Headset 300</h3>
+                      <h5>$232</h5>
+                    </div>
+                 </div>
+              
+         </div>
+</section>
+
+
+
+
+
+  <!-- footer -->
+<section class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <h1>Useful links</h1>
+          <p>Privacy policy</p>
+          <p>Terms and conditions</p>
+          <p>Return/Exchange</p>
+          <p>Offer coupons</p>
+        </div>
+  
+  
+        <div class="col-md-3">
+          <h1>Company</h1>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Join Us</p>
+          <p>More</p>
+        </div>
+  
+  
+        <div class="col-md-3">
+          <h1>Follow Us</h1>
+          <p><i class="fa fa-instagram"></i>Instagram</p>
+          <p><i class="fa fa-facebook-official"></i> Facebook</p>
+          <p><i class="fa fa-twitter"></i> Twitter</p>
+          <p><i class="fa fa-youtube-play"></i> Youtube</p>
+        </div>
+  
+        <div class="col-md-3 footer-image">
+          <h1>Download app</h1>
+          <img src="appdownload.jpg"> 
+        </div>
+  
+      </div>
+  
+      <hr>
+      <p class="copyright"> Made by shreyas</p>
+    </div>
+  </section>
+  
+  
+  
+
+  </body>
